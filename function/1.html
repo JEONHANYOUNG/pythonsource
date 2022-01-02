@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+        }
+
+        .tab_menu {
+            position: relative;
+            height: 60px;
+            margin-bottom: 30px;
+        }
+
+/* *********************************************************************************
+ *	탭메뉴 2021년도
+ * *********************************************************************************/
+ .tab_menu {position:relative; height:60px; margin-bottom:30px;}
+ .tab_menu li {position:relative; float:left;}
+ .tab_menu li a:after {content:''; position: absolute; top: 38%; left: -1px; width: 1px; height: 18px; background-color: #ddd;}
+ .tab_menu li:first-child a:after,
+ .tab_menu li a.on + li a:after {display: none;}
+ .tab_menu li a {display: flex; display: -ms-flexbox; align-items: center; -ms-flex-align: center; justify-content: center; -ms-flex-pack: center; position:relative; min-height: 59px; background:#f6f7fb; padding: 5px 1px; border-bottom: 2px solid #063863; font-size:15px; line-height:1.1; color:#666; word-break: break-all; text-align:center; text-decoration:none; letter-spacing: -1px;}
+ .tab_menu li a:hover, 
+ .tab_menu li a:focus, 
+ .tab_menu li a.on {background:#fff; font-weight: bold; color:#063863;}
+ .tab_menu li a:hover:before, 
+ .tab_menu li a:focus:before, 
+ .tab_menu li a.on:before {content:''; position:absolute; top:0; left: 0; z-index: 1; width: 100%; height: 100%; border-radius: 3px 3px 0 0; border-top: 2px solid #063863; border-left: 2px solid #063863; border-right: 2px solid #063863; background-color: transparent;}
+ .tab_menu li a:hover:after, 
+ .tab_menu li a:focus:after, 
+ .tab_menu li a.on:after {display: none;}
+ .tab_menu li .tab {position:absolute;left:0;top:52px;width:100%;padding-top:15px}
+ 
+ .tab_menu2 {position:relative; height:60px; margin-bottom:30px;}
+ .tab_menu2 li {position:relative; float:left;}
+ .tab_menu2 li a:after {content:''; position: absolute; top: 20px; left: 0; width: 1px; height: 18px; background-color: #ddd;}
+ .tab_menu2 li:first-child a:after,
+ .tab_menu2 li a.on + li a:after {display: none;}
+ .tab_menu2 li a {display:block; position:relative; background:#f6f7fb; padding: 21px 0 22px; border-bottom: 2px solid #063863; font-size:15px; line-height:1; color:#666; text-align:center; text-decoration:none}
+ .tab_menu2 li a:hover, 
+ .tab_menu2 li a:focus, 
+ .tab_menu2 li a.on {background:#fff; color:#063863;}
+ .tab_menu2 li a:hover:before, 
+ .tab_menu2 li a:focus:before, 
+ .tab_menu2 li a.on:before {content:''; position:absolute; top:0; left: 0; z-index: 1; width: 100%; height: 100%; border-radius: 3px 3px 0 0; border-top: 2px solid #063863; border-left: 2px solid #063863; border-right: 2px solid #063863; background-color: transparent;}
+ .tab_menu2 li a:hover:after, 
+ .tab_menu2 li a:focus:after, 
+ .tab_menu2 li a.on:after {display: none;}
+    </style>
+</head>
+<body>
+    <div id="txt">
+
+        <ul class="tab_menu">
+            <li style="width: 14.2857%;"><a href="/news/notice/noticeList.do" class="on" onclick="scEventListener.fnList('');return false;" style="height: 59px;">전체</a></li>
+            
+                <li style="width: 14.2857%;"><a href="/news/notice/noticeList.do?searchDivCd=001" onclick="scEventListener.fnList('001');return false;" style="height: 59px;">공고</a></li>
+            
+                <li style="width: 14.2857%;"><a href="/news/notice/noticeList.do?searchDivCd=002" onclick="scEventListener.fnList('002');return false;" style="height: 59px;">행사</a></li>
+            
+                <li style="width: 14.2857%;"><a href="/news/notice/noticeList.do?searchDivCd=003" onclick="scEventListener.fnList('003');return false;" style="height: 59px;">입찰</a></li>
+            
+                <li style="width: 14.2857%;"><a href="/news/notice/noticeList.do?searchDivCd=004" onclick="scEventListener.fnList('004');return false;" style="height: 59px;">인사</a></li>
+            
+                <li style="width: 14.2857%;"><a href="/news/notice/noticeList.do?searchDivCd=006" onclick="scEventListener.fnList('006');return false;" style="height: 59px;">포상대상자공개</a></li>
+            
+                <li style="width: 14.2857%;"><a href="/news/notice/noticeList.do?searchDivCd=005" onclick="scEventListener.fnList('005');return false;" style="height: 59px;">기타</a></li>
+            
+        </ul>     
+         
+</body>
+</html>
