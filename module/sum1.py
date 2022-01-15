@@ -1,2 +1,2 @@
-def sum(a, b):
+def hab(a, b):
     return a + b

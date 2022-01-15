@@ -9,9 +9,18 @@ class Audio:
         self.volume = volume
 
     def switch(self, on_off):
-        self.power = power
+        self.power = on_off
 
     def set_volume(self, volume):
-        self.power = down
+        self.volume = volume
 
-    pass
+    def tune(self):
+        str = "la la la...." if self.power else "turn it on"
+        print(str)
+
+
+mp3 = Audio(False, 8)
+mp3.set_volume(12)
+mp3.tune()
+mp3.switch(True)
+mp3.tune()

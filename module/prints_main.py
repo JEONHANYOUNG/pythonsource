@@ -2,8 +2,9 @@
 
 import prints
 
-# prints.prt1()  # 안녕하세요 여러분!!
-# prints.prt2()  # Hello!! Everyone!!
+prints.prt1()
+prints.prt2()
+
 
 # import prints as p
 
@@ -15,6 +16,5 @@ import prints
 
 # prt1()
 
-print(__name__)  # prints
 
-#   __main__
+# print(__name__)

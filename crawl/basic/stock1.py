@@ -19,7 +19,7 @@ else:
     data = []
     for item in rank_json:
         print(
-            "순위 : {}, 금액 : {}, 회사명: {}".format(
+            "순위 : {}, 금액 : {}, 회사명 : {}".format(
                 item["rank"], item["tradePrice"], item["name"]
             )
         )
@@ -31,7 +31,7 @@ else:
         ) as f1:
             # txt 저장
             f.write(
-                "순위 : {}, 금액 : {}, 회사명: {}\n".format(
+                "순위 : {}, 금액 : {}, 회사명 : {}\n".format(
                     item["rank"], item["tradePrice"], item["name"]
                 )
             )

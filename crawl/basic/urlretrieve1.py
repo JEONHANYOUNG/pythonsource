@@ -6,7 +6,7 @@ import urllib.request as req
 
 url = "http://google.com"
 
-save_url = "c:\\google.html"
+save_url = "d:\\google.html"
 
 try:
     file1, header1 = req.urlretrieve(url, save_url)

@@ -1,16 +1,18 @@
 # 파일 출력
 
 # 파일 생성
-# f = open("./test1.txt", "w")  # 파일을 만드는 방법(test1.txt가 만들어짐)
+# f = open("./test1.txt", "w")
 # print(dir(f))
 # f.close()
 
+
 # 파일 생성 + 쓰기
 # f = open("./test1.txt", "w", encoding="utf-8")
-# f.write("안녕하세요/n반갑습니다.")
+# f.write("안녕하세요\n반갑습니다.")
 # f.close()
 
-# 파일 생성 + 1~10 쓰기
+
+# 파일 생성 + 1~ 10 쓰기
 # f = open("./test1.txt", "w", encoding="utf-8")
 # for i in range(1, 11):
 #     f.write(str(i) + "\n")  # +: 'int' and 'str'
@@ -22,19 +24,20 @@
 #     f.write("안녕하세요\n")
 # f.close()
 
+
 # 파일 쓰기(리스트)
 # f = open("./test2.txt", "w", encoding="utf-8")
-# list1 = ["kim", "park", "cho"]
-# f.write(list1)  # TypeError: write() argument must be str, not list
-# for i in list1:
-#     f.write(i + "\n")
+# list1 = ["kim\n", "park\n", "cho\n"]
+# # f.write(list1) # TypeError: write() argument must be str, not list
+# # for i in list1:
+# #     f.write(i + "\n")
 # f.writelines(list1)
 
 # 파일 쓰기(딕셔너리)
 # f = open("./test3.txt", "w", encoding="utf-8")
 # dict1 = {"name": "hong", "age": 25, "addr": "서울"}
 
-# 딕셔너리 => items, keys, values()
+# 딕셔너리 => items(), keys(), values()
 # for k, v in dict1.items():
 #     f.writelines("{} : {}\n".format(k, v))
 # f.close()
@@ -50,12 +53,12 @@
 #         f.write(str(i) + "\n")
 
 
-with open("./test2.txt", "w", encoding="utf-8") as f:
-    list1 = ["kim\n", "park\n", "cho\n"]
+# with open("./test2.txt", "w", encoding="utf-8") as f:
+#     list1 = ["kim\n", "park\n", "cho\n"]
 
-    # for i in list1:
-    #     f.write(i + "\n")
-    f.writelines(list1)
+#     # for i in list1:
+#     #     f.write(i + "\n")
+#     f.writelines(list1)
 
 
 # 1000명의 키와 몸무게를 랜덤하게 생성한 후 파일에 출력

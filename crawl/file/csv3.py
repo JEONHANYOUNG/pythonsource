@@ -11,5 +11,8 @@ with open("./sample2.csv", "r") as f:
     # print(type(reader))
     # print(dir(reader))
 
+    # 헤더명 제거
+    next(reader)
+
     for item in reader:
         print(item)

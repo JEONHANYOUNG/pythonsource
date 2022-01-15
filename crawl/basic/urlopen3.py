@@ -7,7 +7,7 @@ encar_url = "http://www.encar.com/index.do"
 try:
     response = req.urlopen(encar_url)
 
-    print("type {}".format(type(response)))  
+    print("type {}".format(type(response)))  # <class 'http.client.HTTPResponse'>
     print("geturl {}".format(response.geturl()))
     print("status {}".format(response.status))
     print("header {}".format(response.getheaders()))

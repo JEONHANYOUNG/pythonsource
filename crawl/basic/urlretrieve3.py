@@ -2,13 +2,13 @@
 
 import urllib.request as req
 
-# 좋아하는 사진 저장하기 / python.org 사이트 저장
-img_url = "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMjhfMjU2%2FMDAxNjExODA3ODgyOTIx.P9kbjq8amWAfA0mNVk0l5fuAod1b5u37DJ0q_y-BrzAg.ZQI0Qw7e4j38ccp22jBZeozbbaRfmqkWyAJPaT6EAzQg.JPEG.soonnye0425%2F10.JPG&type=a340"
+#  좋아하는 사진 저장하기 / python.org 사이트 저장
+
+img_url = "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTEyMTRfODcg%2FMDAxNjM5NDY5NjE4MTQ2.-rcqagKxyVTfajGcFKJoFyl2RVw_4GPXjz7Qyy8JLyog.vSKJ5MBfDQpN0vyLudXJ-cg-JWgLnp4EvmGOuRV9paYg.JPEG.ped95%2FDSC02499.JPG&type=a340"
 doc_url = "http://python.org"
 
-# 저장할 파일명 지정
-save_img = "c:\\camera.png"
-save_doc = "c:\\python.html"
+save_img = "d:\\cat.png"
+save_doc = "d:\\python.html"
 
 try:
     file1, header1 = req.urlretrieve(img_url, save_img)

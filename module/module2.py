@@ -8,6 +8,7 @@
 # print(floor(2.8))
 # print(ceil(2.5))
 
+
 # import 모듈명 as 별칭
 # from 모듈명 import 모듈함수 as 별칭
 # import math as m
